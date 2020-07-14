@@ -1,0 +1,25 @@
+{{#partial "content"}}
+
+    <div class="Container>
+<h1> Add information about the endangered animal </h1>
+ <form action="/endangeredAnimals/new" method="post">
+    <label for="name">Animal name </label>
+    <input type="text" id="name" class="form-control">
+    <label> Choose the animal's health status </label>
+    <select name="health">
+        <option> Healthy </option>
+        <option> Okay </option>
+        <option> Ill </option>
+    </select>
+    <label> Choose the animal's age </label>
+    <select name="age">
+        <option> Infant </option>
+        <option> Young </option>
+        <option> Adult </option>
+    </select>
+    <button type="submit" class="btn tempting-azure-gradient">Specify Animal As Endangered</button>
+    </form>
+    </div>
+
+{{/partial}}
+{{> layout.hbs}}

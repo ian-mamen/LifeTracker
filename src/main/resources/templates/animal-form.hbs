@@ -1,0 +1,23 @@
+{{#partial "content"}}
+
+
+    <div class="Container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="md-form">
+                    <form action="/animal/new" method="post">
+
+                        <label for="name">Animal name </label>
+                        <input type="text" id="name" class="form-control">
+                        <label> Animal status </label>
+                        <select name="type" id="type">
+                            <option value="endangered"> Endangered </option>
+                            <option value="normal"> Normal </option>
+                        </select>
+                        <button type="submit" class="btn btn-success">Add Animal</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+{{/partial}}
+{{> layout.hbs}}

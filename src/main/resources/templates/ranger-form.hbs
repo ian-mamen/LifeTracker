@@ -1,0 +1,19 @@
+{{#partial "content"}}
+
+    <div class="Container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="md-form">
+                    <form action="/rangers" method="post">
+                        <input type="text" id="name" class="form-control">
+                        <label for="name">Ranger name </label>
+                        <input type="text" id="name" class="form-control">
+                        <label for="contactInfo"> Contact Info </label>
+                        <button type="submit" class="btn btn-success">Add Ranger</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+{{/partial}}
+{{> layout.hbs}}

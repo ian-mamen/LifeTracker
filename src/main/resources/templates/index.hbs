@@ -1,0 +1,31 @@
+{{#partial "content"}}
+
+    <h1 class="animated slideInRight delay-2s" style="font-family:"Times New Roman", TImes, serif;font-size: 60px; font-color: #6699ff>Welcome to the Wildlife Tracker</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="animated five rollIn delay-40s" style="font-family:"Times New Roman", TImes, serif;font-size: 60px; font-color: #6699ff> Here is what the app can do:: </p>
+                    <ul class="list-group">
+                        <li class="list-group-item"> <span class="glyphicon">&#xe127;</span> Add animals </li>
+                        <li class="list-group-item"> <span class="glyphicon">&#xe127;</span> Add Rangers </li>
+                        <li class="list-group-item"> <span class="glyphicon">&#xe127;</span> Record Sightings of Animals in the park </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-image" style="background-image: url(https://st.depositphotos.com/1307373/1363/i/950/depositphotos_13636309-stock-photo-silhouette-elephants-and-giraffe.jpg);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <button class=" btn btn-outline-success"><a href="/animal/new">Add a new Animal</a></button>
+                    <button class=" btn btn-outline-success"><a href="/sightings">Sight an Animal</a><button>
+                        <button class=" btn btn-outline-success"><a href="/rangers/new">Add a new Ranger</a><button>
+                </div>
+            </div>
+        </div>
+
+
+{{/partial}}
+{{> layout.hbs}}

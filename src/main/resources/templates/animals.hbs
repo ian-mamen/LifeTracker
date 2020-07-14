@@ -1,0 +1,22 @@
+{{#partial "content"}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>List of Animals</h1>
+                <div class="card card-image" style="background-image: url(https://images.wallpaperscraft.com/);">
+                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                        <div>
+                            <ul>
+
+                                #foreach ($animal in $animals)
+                                <li><a href="/animals/$animal.getId()">$animal.getName()</a></li>
+                                #end
+                            </ul>
+
+
+                            <a href="/animals/new">Add New Animal</a>
+
+
+{{/partial}}
+{{> layout.hbs}}

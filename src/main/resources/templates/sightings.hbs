@@ -1,0 +1,31 @@
+{{#partial "content"}}
+
+    <div class= "container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h3> Input sighting Details </h3>
+
+                <form action="/sighting" method="post">
+                    <label> Select Animal </label>
+                    #if(animals.size() > = 0)
+                    <div class="custom-select" style=width: 420px;">
+
+                    <select name="selectAnimal">
+                        #foreach($animal in $animals)
+                        <option value="$animal.getId()">$animal.getName() </option>
+                        #end
+                    </select>
+            </div>
+
+            <label> Location </label>
+            <input type="text" name="location" class="form-control">
+            #foreach($ranger in $rangers)
+            <option value="ranger.getId()">$ranger.getName() </option>
+            #end
+            </select>
+        </div>
+
+
+{{/partial}}
+{{> layout.hbs}}
